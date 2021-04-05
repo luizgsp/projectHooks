@@ -49,7 +49,7 @@ const UseRef = (props) => {
                     onChange={ e => setValue1(e.target.value)}
                     />
             </div>
-            <SectionTitle title="Exercício #01" />
+            <SectionTitle title="Exercício #02" />
             <div className="center">
                 <input type="text" className="input"
                     ref={myInput2}
