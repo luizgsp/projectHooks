@@ -14,7 +14,6 @@ const UseEffect = (props) => {
     const [number, setNumber] = useState(1)
     const [fatorial, setFatorial] = useState(1)
 
-    const [par, setPar] = useState(0)
     const [ehPar, setEhPar] = useState(false)
 
     useEffect(
@@ -24,8 +23,8 @@ const UseEffect = (props) => {
 
     useEffect(
         function(){
-             setEhPar(par % 2 === 0 ? true : false)
-        },[par]
+             setEhPar(number % 2 === 0 ? true : false)
+        },[number]
     )
 
     return (
@@ -49,10 +48,6 @@ const UseEffect = (props) => {
             <SectionTitle title="Exercício #02 - Par ou Impar" />
             <div className="center">
                 <span className="text">{ ehPar ? 'Númro Par' : 'Número Impar'}</span>
-                <input type="number" className="input"
-                        value={par}
-                        onChange={e => setPar(e.target.value)}
-                    />
             </div>
         </div>
     )
