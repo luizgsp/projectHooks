@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from 'react'
+import React, { useMemo, useState } from 'react'
 import PageTitle from '../../components/layout/PageTitle'
 import SectionTitle from '../../components/layout/SectionTitle'
 
@@ -21,7 +21,7 @@ const UseMemo = (props) => {
     */
 
     const result = useMemo(() => sum(n1, n2), [n1,n2])
-    
+
     return (
         <div className="UseMemo">
             <PageTitle

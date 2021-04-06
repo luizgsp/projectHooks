@@ -3,7 +3,6 @@ import PageTitle from '../../components/layout/PageTitle'
 import SectionTitle from '../../components/layout/SectionTitle'
 
 const merge = function(v1, v2){
-    const maior = v1.lenght > v2.lenght ? v1.lenght : v2.lenght
     return [...v1]
         .map((e, i) => `${e}${v2[i] || ""}`)
         .join("")
